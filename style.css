@@ -15,8 +15,8 @@ body{
 }
 
 header{
-    background:#14532d;
-    color:#fff;
+    background:#fffff;
+    color:#14532d;
     display:flex;
     justify-content:space-between;
     align-items:center;
