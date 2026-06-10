@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria de Fotos</title>
  <style>
-        /* RESET BÁSICO */
+  /* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -13,25 +13,27 @@
     font-family: Arial, sans-serif;
 }
 
+/* FUNDO (mais moderno e suave) */
 body {
-    background-color: #156900;
+    background: linear-gradient(180deg, #0f5f2a, #0a3d1a);
     color: #000;
     font-size: 16px;
-    line-height: 1.5;
 }
 
-/* HEADER */
+/* HEADER (barra mais elegante) */
 header {
-    background-color: #fff;
-    padding: 30px;
+    background: #ffffff;
+    padding: 20px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+    border-bottom: 3px solid #0a7900;
 }
 
+/* LOGO */
 header .logo img {
-    width: 130px;
+    width: 120px;
 }
 
 /* MENU MOBILE BTN */
@@ -45,7 +47,7 @@ header .menu-btn {
 header .menu-btn div {
     width: 25px;
     height: 3px;
-    background-color: #c4c4c4;
+    background-color: #0a7900;
     transition: 0.3s;
 }
 
@@ -70,16 +72,17 @@ nav ul li a {
     font-size: 18px;
     padding: 10px 15px;
     display: block;
-    border-radius: 4px;
-    transition: transform 0.3s ease, color 0.3s ease;
+    border-radius: 6px;
+    transition: all 0.3s ease;
 }
 
-/* hover mais suave */
+/* hover mais clean */
 nav ul li a:hover {
-    transform: scale(1.08);
+    background-color: #eaffea;
+    transform: scale(1.05);
 }
 
-/* underline animado */
+/* linha animada */
 nav ul li a::after {
     content: '';
     position: absolute;
@@ -88,7 +91,7 @@ nav ul li a::after {
     width: 0;
     height: 2px;
     background-color: #064200;
-    transition: width 0.3s ease;
+    transition: width 0.3s;
 }
 
 nav ul li a:hover::after,
@@ -96,35 +99,37 @@ nav ul li.active a::after {
     width: 100%;
 }
 
-/* GALLERY */
+/* TÍTULO */
 .gallery-title {
     text-align: center;
     margin: 40px 0;
-    font-size: 3rem;
-    color: #000;
+    font-size: 3em;
+    color: #ffffff;
     text-transform: uppercase;
 }
 
+/* GALLERY (mantido igual — quadrados continuam) */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
 }
 
+/* IMPORTANTE: mantém formato “quadrado” */
 .gallery img {
     width: 100%;
-    height: 100%;
-    border-radius: 10px;
+    aspect-ratio: 1 / 1; /* garante quadrado perfeito */
     object-fit: cover;
+    border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .gallery img:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 20px rgba(6, 71, 0, 0.3);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
 }
 
 /* RESPONSIVO */
@@ -145,7 +150,7 @@ nav ul li.active a::after {
         top: 100%;
         left: 0;
         width: 100%;
-        background: #fff;
+        background: #ffffff;
         padding: 20px 0;
         align-items: center;
     }
@@ -166,7 +171,6 @@ nav ul li.active a::after {
         padding: 10px;
     }
 }
-
     </style></head>
 <body>
     <header class="header">
