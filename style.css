@@ -1,6 +1,6 @@
-/* =====================================================
+/* ==========================
    RESET GERAL
-===================================================== */
+========================== */
 
 *{
     margin:0;
@@ -9,9 +9,9 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
-/* =====================================================
+/* ==========================
    BODY
-===================================================== */
+========================== */
 
 body{
     background:linear-gradient(180deg,#0f5f2a,#0a3d1a);
@@ -20,90 +20,68 @@ body{
     line-height:1.8;
 }
 
-/* =====================================================
-   CABEÇALHO
-===================================================== */
+/* ==========================
+   HEADER
+========================== */
 
 header{
-
     background:#ffffff;
-
     border-bottom:3px solid #0a7900;
 
     display:flex;
     justify-content:space-between;
     align-items:center;
 
-    padding:15px 30px;
+    padding:10px 30px;
 
     position:sticky;
     top:0;
     z-index:999;
-
 }
 
-/* =====================================================
+/* ==========================
    LOGO
-===================================================== */
+========================== */
 
 .logo img{
-
     width:120px;
     height:auto;
-
 }
 
-/* =====================================================
+/* ==========================
    BOTÃO MENU MOBILE
-===================================================== */
+========================== */
 
 .menu-btn{
-
     display:none;
-
     flex-direction:column;
-
     cursor:pointer;
-
     gap:5px;
-
 }
 
 .menu-btn div{
-
     width:25px;
     height:3px;
-
     background:#0a7900;
-
     transition:.3s;
-
 }
 
-/* =====================================================
+/* ==========================
    MENU
-===================================================== */
+========================== */
 
 nav{
-
     display:flex;
-
 }
 
 nav ul{
-
     display:flex;
-
     gap:20px;
-
     list-style:none;
-
 }
 
 nav ul li{
-
     position:relative;
-
 }
 
 nav ul li a{
@@ -113,26 +91,20 @@ nav ul li a{
     padding:10px 15px;
 
     color:#0a7900;
-
     text-decoration:none;
-
     font-size:18px;
 
     border-radius:6px;
 
     transition:.3s;
-
 }
 
 nav ul li a:hover{
 
     background:#eaffea;
-
     transform:scale(1.05);
 
 }
-
-/* Linha animada */
 
 nav ul li a::after{
 
@@ -144,7 +116,6 @@ nav ul li a::after{
     bottom:0;
 
     width:0;
-
     height:2px;
 
     background:#064200;
@@ -160,9 +131,9 @@ nav ul li.active a::after{
 
 }
 
-/* =====================================================
+/* ==========================
    CONTAINER
-===================================================== */
+========================== */
 
 .container{
 
@@ -174,9 +145,9 @@ nav ul li.active a::after{
 
 }
 
-/* =====================================================
+/* ==========================
    TÍTULOS
-===================================================== */
+========================== */
 
 h1{
 
@@ -194,10 +165,9 @@ h1{
 
 h2{
 
-    color:#ffffff;
+    color:#d8ffd8;
 
     margin-top:60px;
-
     margin-bottom:20px;
 
     border-left:6px solid #22c55e;
@@ -206,27 +176,27 @@ h2{
 
 }
 
-/* =====================================================
+/* ==========================
    PARÁGRAFOS
-===================================================== */
+========================== */
 
 p{
 
     text-align:justify;
 
-    color:#ffffff;
-
     font-size:20px;
+
+    color:#ffffff;
 
     margin-bottom:20px;
 
 }
 
-/* =====================================================
-   IMAGENS DO CONTEÚDO
-===================================================== */
+/* ==========================
+   IMAGENS GERAIS
+========================== */
 
-.imagem-conteudo{
+img{
 
     display:block;
 
@@ -234,25 +204,23 @@ p{
 
     max-width:50%;
 
-    width:100%;
-
     border-radius:12px;
 
     box-shadow:0 5px 20px rgba(0,0,0,.25);
 
 }
 
-/* =====================================================
+/* ==========================
    TÍTULO DA GALERIA
-===================================================== */
+========================== */
 
 .gallery-title{
 
     text-align:center;
 
-    color:#ffffff;
-
     font-size:3em;
+
+    color:#ffffff;
 
     margin:40px 0;
 
@@ -260,10 +228,9 @@ p{
 
 }
 
-/* =====================================================
+/* ==========================
    GALERIA
-   (MANTÉM AS IMAGENS QUADRADAS)
-===================================================== */
+========================== */
 
 .gallery{
 
@@ -275,32 +242,23 @@ p{
 
     max-width:1200px;
 
-    margin:0 auto;
+    margin:auto;
 
     padding:20px;
 
 }
 
-/* Fotos quadradas */
-
 .gallery img{
 
     width:100%;
 
-    aspect-ratio:1 / 1;
+    aspect-ratio:1/1;
 
     object-fit:cover;
 
-    display:block;
-
-    margin:0;
-
     border-radius:10px;
 
-    box-shadow:0 5px 20px rgba(0,0,0,.25);
-
-    transition:transform .3s ease,
-               box-shadow .3s ease;
+    transition:transform .3s, box-shadow .3s;
 
 }
 
@@ -308,13 +266,13 @@ p{
 
     transform:scale(1.05);
 
-    box-shadow:0 6px 20px rgba(0,0,0,.30);
+    box-shadow:0 6px 20px rgba(0,0,0,.25);
 
 }
 
-/* =====================================================
+/* ==========================
    CRÉDITOS
-===================================================== */
+========================== */
 
 .creditos{
 
@@ -336,15 +294,13 @@ p{
 
 .creditos h2{
 
-    color:#14532d;
+    margin:0 0 15px 0;
+
+    padding:0;
 
     border:none;
 
-    margin-top:0;
-
-    margin-bottom:15px;
-
-    padding:0;
+    color:#14532d;
 
     text-align:center;
 
@@ -352,9 +308,9 @@ p{
 
 .creditos p{
 
-    color:#14532d;
-
     text-align:center;
+
+    color:#14532d;
 
     font-size:18px;
 
@@ -378,9 +334,9 @@ p{
 
 }
 
-/* =====================================================
+/* ==========================
    RODAPÉ
-===================================================== */
+========================== */
 
 footer{
 
@@ -388,7 +344,7 @@ footer{
 
     background:#14532d;
 
-    color:#14532d;
+    color:#ffffff;
 
     text-align:center;
 
@@ -398,23 +354,23 @@ footer{
 
 footer p{
 
-    color:#ffffff;
+    margin:0;
 
     text-align:center;
 
-    margin:0;
+    color:#ffffff;
 
 }
 
-/* =====================================================
-   RESPONSIVIDADE
-===================================================== */
+/* ==========================
+   RESPONSIVO
+========================== */
 
 @media(max-width:768px){
 
     header{
 
-        padding:15px 20px;
+        padding:10px 20px;
 
     }
 
@@ -462,9 +418,9 @@ footer p{
 
         flex-direction:column;
 
-        width:100%;
-
         gap:10px;
+
+        width:100%;
 
         text-align:center;
 
@@ -502,23 +458,9 @@ footer p{
 
     }
 
-    .imagem-conteudo{
+    img{
 
         max-width:90%;
-
-    }
-
-    /* Mantém as fotos da galeria quadradas também no celular */
-
-    .gallery{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .gallery img{
-
-        aspect-ratio:1 / 1;
 
     }
 
