@@ -5,9 +5,9 @@ Bem-vindo ao site do projeto **Guardião do Sagui**!
 ## Navegação
 
 - [🔥 informações](index.html)
-- [📔 Diário de Bordo](index3.html)
-- [🖼️ Galeria de Fotos](index2.html)
-- [👨‍💻 Créditos](index4.html)
+- [📔 Diário de Bordo](index4.html)
+- [🖼️ Galeria de Fotos](index3.html)
+- [👨‍💻 Créditos](index5.html)
 
 ---
 
