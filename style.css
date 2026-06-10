@@ -26,7 +26,7 @@ body{
 
 header{
     background:#ffffff;
-    border-bottom:3px solid ##000000;
+    border-bottom:3px solid #0a7900;
 
     display:flex;
     justify-content:space-between;
@@ -342,9 +342,9 @@ footer{
 
     margin-top:70px;
 
-    background:#0a7900;
+    background:#14532d;
 
-    color:#14532d;
+    color:#ffffff;
 
     text-align:center;
 
