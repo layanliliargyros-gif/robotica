@@ -1,0 +1,95 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guardião do Sagui</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f4f4f4;
+}
+
+header{
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin:15px 0;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.btn{
+    display:block;
+    text-decoration:none;
+    background:#43a047;
+    color:white;
+    padding:15px;
+    margin:10px 0;
+    border-radius:10px;
+    text-align:center;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#2e7d32;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#1b5e20;
+    color:white;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🔥 Guardião do Sagui</h1>
+    <p>Monitoramento e prevenção de queimadas</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Bem-vindo!</h2>
+        <p>Escolha uma seção para navegar pelo projeto.</p>
+    </div>
+
+    <a class="btn" href="queimadas.html">🔥 Queimadas</a>
+
+    <a class="btn" href="parque.html">🌳 Parque do Sagui</a>
+
+    <a class="btn" href="diario.html">📔 Diário de Bordo</a>
+
+    <a class="btn" href="galeria.html">🖼️ Galeria de Fotos</a>
+
+    <a class="btn" href="creditos.html">👨‍💻 Créditos</a>
+
+</div>
+
+<footer>
+    Projeto de Robótica • Guardião do Sagui
+</footer>
+
+</body>
+</html>
+```
