@@ -90,7 +90,7 @@ nav ul li a{
 
     padding:10px 15px;
 
-    color:#fffff;
+    color:#000000;
     text-decoration:none;
     font-size:18px;
 
@@ -197,7 +197,7 @@ p{
 
 img{
 
-    display:grid;
+    display:flex;
 
     margin:20px auto;
 
