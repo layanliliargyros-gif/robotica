@@ -15,7 +15,7 @@
 
 body{
     background:linear-gradient(180deg,#ffffff,#f8f8ff);
-    color:#222;
+    color:#000000;
     font-size:16px;
     line-height:1.8;
 }
@@ -341,7 +341,7 @@ footer{
 
     margin-top:70px;
 
-    background:#ffffff;
+    background:##14532d;
 
     color:#14532d;
 
