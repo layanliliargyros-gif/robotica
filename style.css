@@ -155,7 +155,7 @@ h1{
 
     font-size:42px;
 
-    color:#ffffff;
+    color:#000000;
 
     margin-bottom:20px;
 
@@ -165,8 +165,7 @@ h1{
 
 h2{
 
-    color:#d8ffd8;
-
+    color:#d8ffd8000000
     margin-top:60px;
     margin-bottom:20px;
 
@@ -186,7 +185,7 @@ p{
 
     font-size:20px;
 
-    color:#ffffff;
+    color:#000000;
 
     margin-bottom:20px;
 
@@ -300,7 +299,7 @@ img{
 
     border:none;
 
-    color:#14532d;
+    color:#000000;
 
     text-align:center;
 
@@ -310,7 +309,7 @@ img{
 
     text-align:center;
 
-    color:#14532d;
+    color:#000000;
 
     font-size:18px;
 
@@ -320,7 +319,7 @@ img{
 
 .creditos a{
 
-    color:#14532d;
+    color:#000000;
 
     text-decoration:none;
 
