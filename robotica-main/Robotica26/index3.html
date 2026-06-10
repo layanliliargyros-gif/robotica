@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #156900;
+            color: #000000;
+            font-size: 16px;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo img {
+            width: 130px;
+        }
+
+        header .menu-btn {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        header .menu-btn div {
+            width: 25px;
+            height: 3px;
+            background-color: #c4c4c4;
+            margin: 5px 0;
+            transition: 0.3s;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #0a7900;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            display: block;
+            transition: color 0.3s, transform 0.3s;
+            border-radius: 4px;
+        }
+
+        nav ul li a:hover {
+            color: #0a7900;
+            transform: scale(1.1);
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #064200;
+            left: 0;
+            bottom: 0;
+            transition: width 0.3s;
+        }
+
+        nav ul li a:hover::after,
+        nav ul li.active a::after {
+            width: 100%;
+        }
+
+        .gallery-title {
+            text-align: center;
+            margin: 40px 0;
+            font-size: 3em;
+            color: #000000;
+            text-transform: uppercase;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 90%;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(6, 71, 0, 0.3);
+        }
+
+        /* Estilos para tablets e dispositivos móveis */
+        @media (max-width: 768px) {
+            header .logo img {
+                width: 80px;
+            }
+
+            header .menu-btn {
+                display: flex;
+            }
+
+            nav {
+                display: none;
+                width: 100%;
+                background-color: #fffefd;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+            }
+
+            nav.active {
+                display: flex;
+            }
+
+            nav ul {
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+
+            nav ul li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            nav ul li a {
+                font-size: 16px;
+                padding: 8px 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="simb.jpeg" width="300" height="200""Logo da Marca">
+        </div>
+        <div class="menu-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li class="active"><a href="index3.html">Galeria de Fotos</a></li>
+                <li><a href="index4.html">Diário de Bordo</a></li>
+                <li><a href="index5.html">Créditos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="gallery-title">Galeria de Fotos</div>
+
+    <div class="gallery">
+        <img src="1img.jpeg" alt="imagem1" >
+        <img src="2img.jpeg" alt="Imagem 2">
+        <img src="3img.jpeg" alt="Imagem 3">
+        <img src="4img.jpeg" alt="Imagem 4">
+        <img src="5img.jpeg" alt="Imagem 5">
+        <img src="6img.jpeg" alt="Imagem 6">
+        <img src="7img.jpeg" alt="Imagem 7">
+        <img src="8img.jpeg" alt="Imagem 8">
+        <img src="9img.jpeg" alt="Imagem 9">
+        <img src="10img.jpeg" alt="Imagem 10">
+        <img src="11img.jpeg" alt="Imagem 11">
+        <img src="12img.jpeg" alt="Imagem 12">
+        <img src="13img.jpeg" alt="Imagem 13">
+        <img src="14img.jpeg" alt="Imagem 14">
+        <img src="img15.jpeg" alt="Imagem 15">
+        <img src="img16.jpeg" alt="Imagem 16">
+        <img src="img17.jpeg" alt="Imagem 17">
+        <img src="img18.jpeg" alt="imagem18">
+        <img src="img19.jpeg" alt="Imagem 19">
+        <img src="img20.jpeg" alt="Imagem 20">
+        <img src="img21.jpeg" alt="Imagem 21">
+        <img src="img22.jpeg" alt="Imagem 22">
+        <img src="img23.jpeg" alt="Imagem 23">
+        <img src="img24.jpeg" alt="Imagem 24">
+        <img src="img25.jpeg" alt="Imagem 25">
+        <img src="img26.jpeg" alt="Imagem 26">
+        <img src="img27.jpeg" alt="Imagem 27">
+        <img src="img28.jpeg" alt="Imagem 28">
+        <img src="img29.jpeg" alt="Imagem 29">
+        <img src="img30.jpeg" alt="Imagem 30">
+        <img src="img31.jpeg" alt="Imagem 31">
+        <img src="img32.jpeg" alt="Imagem 32">
+        <img src="img33.jpeg" alt="Imagem 33">
+        <img src="img34.jpeg" alt="Imagem 34">
+        <img src="img35.jpeg" alt="Imagem 35">
+        <img src="img36.jpeg" alt="imagem36">
+        <img src="img37.jpeg" alt="Imagem 37">
+        <img src="img38.jpeg" alt="Imagem 38">
+        <img src="img39.jpeg" alt="Imagem 39">
+        <img src="img40.jpeg" alt="Imagem 40">
+        <img src="img41.jpeg" alt="Imagem 41">
+        <img src="img42.jpeg" alt="Imagem 42">
+        <img src="img43.jpeg" alt="Imagem 43">
+        <img src="img44.jpeg" alt="Imagem 44">
+        <img src="img45.jpeg" alt="Imagem 45">
+        <img src="img46.jpeg" alt="Imagem 46">
+        <img src="img47.jpeg" alt="Imagem 47">
+        <img src="img48.jpeg" alt="Imagem 48">
+        <img src="img49.jpeg" alt="Imagem 49">
+        <img src="img50.jpeg" alt="Imagem 50">
+        <img src="img51.jpeg" alt="Imagem 51">
+        <img src="img52.jpeg" alt="Imagem 52">
+        
+    </div>
+      <video width="640" height="360" controls>
+        <source src="video1.mp4" type="video/mp4">
+       
+    </video>
+     <video width="640" height="360" controls>
+        <source src="video2.mp4" type="video/mp4">
+      
+    </video>
+
+    <script>
+        document.querySelector('.menu-btn').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
