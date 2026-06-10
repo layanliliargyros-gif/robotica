@@ -291,7 +291,7 @@ p{
 
     object-fit:cover;
 
-    display:block;
+    display:grid;
 
     margin:0;
 
