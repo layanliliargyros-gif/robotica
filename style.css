@@ -26,9 +26,9 @@ body{
 
 header{
 
-    background:#ffffff;
+    background:#0a7900;
 
-    border-bottom:3px solid #0a7900;
+    border-bottom:3px solid #ffffff 
 
     display:flex;
     justify-content:space-between;
