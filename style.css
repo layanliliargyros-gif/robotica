@@ -15,7 +15,7 @@
 
 body{
     background:linear-gradient(180deg,#ffffff,#f8f8ff);
-    color:#2F4F4F;
+    color:#000000;
     font-size:16px;
     line-height:1.8;
 }
@@ -90,7 +90,7 @@ nav ul li a{
 
     padding:10px 15px;
 
-    color:#000000;
+    color:#fffff;
     text-decoration:none;
     font-size:18px;
 
@@ -199,9 +199,9 @@ img{
 
     display:grid;
 
-    margin:40px auto;
+    margin:20px auto;
 
-    max-width:80%;
+    max-width:20%;
 
     border-radius:12px;
 
@@ -235,15 +235,15 @@ img{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(600px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(600px,3fr));
 
-    gap:20px;
+    gap:40px;
 
     max-width:1200px;
 
     margin:auto;
 
-    padding:40px;
+    padding:60px;
 
 }
 
