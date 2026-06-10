@@ -62,7 +62,7 @@ header{
 .menu-btn div{
     width:25px;
     height:3px;
-    background:#0a7900;
+    background:#006400;
     transition:.3s;
 }
 
@@ -399,7 +399,7 @@ footer p{
 
         width:100%;
 
-        background:#006400;
+        background:#fffff;
 
         padding:20px 0;
 
