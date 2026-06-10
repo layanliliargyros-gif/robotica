@@ -25,7 +25,7 @@ body{
 ========================== */
 
 header{
-    background:#14532d;
+    background:#006400;
     border-bottom:3px solid #0a7900;
 
     display:flex;
@@ -201,7 +201,7 @@ img{
 
     margin:40px auto;
 
-    max-width:50%;
+    max-width:80%;
 
     border-radius:12px;
 
@@ -219,7 +219,7 @@ img{
 
     font-size:3em;
 
-    color:#ffffff;
+    color:#000000;
 
     margin:40px 0;
 
@@ -399,7 +399,7 @@ footer p{
 
         width:100%;
 
-        background:#fffff;
+        background:#006400;
 
         padding:20px 0;
 
