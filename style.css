@@ -26,7 +26,7 @@ body{
 
 header{
 
-    background:#14532d;
+    background:#ffffff;
 
     border-bottom:3px solid #22c55e;
 
@@ -70,7 +70,7 @@ header{
 
     width:25px;
     height:3px;
-    background:#ffffff;
+    background:#14532d;
     transition:.3s;
 
 }
