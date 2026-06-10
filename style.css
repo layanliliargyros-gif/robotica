@@ -197,7 +197,7 @@ p{
 
 img{
 
-    display:block;
+    display:grid;
 
     margin:40px auto;
 
@@ -235,7 +235,7 @@ img{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(600px,1fr));
 
     gap:20px;
 
@@ -399,7 +399,7 @@ footer p{
 
         width:100%;
 
-        background:#0a7900;
+        background:#2F4F4F;
 
         padding:20px 0;
 
