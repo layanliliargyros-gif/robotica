@@ -197,7 +197,7 @@ p{
 
 img{
 
-    display:flex;
+    display:none;
 
     margin:20px auto;
 
@@ -235,7 +235,7 @@ img{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(3,1fr));
+    grid-template-columns:repeat(auto-fit,(3,1fr));
 
     gap:30px;
 
