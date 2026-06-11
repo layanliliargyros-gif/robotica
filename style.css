@@ -201,7 +201,7 @@ img{
 
     margin:20px auto;
 
-    max-width:10%;
+    max-width:100%;
 
     border-radius:12px;
 
@@ -235,15 +235,15 @@ img{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(500px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(3,1fr));
 
-    gap:50px;
+    gap:30px;
 
-    max-width:1500px;
+    max-width:1800px;
 
     margin:auto;
 
-    padding:70px;
+    padding:30px;
 
 }
 
