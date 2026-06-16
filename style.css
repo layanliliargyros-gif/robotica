@@ -213,18 +213,6 @@ img{
     text-transform:uppercase;
 }
 /* ==========================
-   TÍTULO DA GALERIA
-========================== */
-
-.gallery-title{
-    text-align:center;
-    font-size:3em;
-    color:#000000;
-    margin:40px 0;
-    text-transform:uppercase;
-}
-
-/* ==========================
    GALERIA
 ========================== */
 
@@ -249,7 +237,23 @@ img{
     transform:scale(1.05);
     box-shadow:0 6px 20px rgba(0,0,0,.25);
 }
+/* ==========================
+   VÍDEOS
+========================== */
 
+.gallery video{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.25);
+    transition:transform .3s, box-shadow .3s;
+}
+
+.gallery video:hover{
+    transform:scale(1.05);
+    box-shadow:0 6px 20px rgba(0,0,0,.25);
+}
 /* ==========================
    RESPONSIVO
 ========================== */
@@ -267,7 +271,13 @@ img{
     }
 
 }
+@media(max-width:768px){
 
+    .gallery video{
+        height:120px;
+    }
+
+}
 /* ==========================
    CRÉDITOS
 ========================== */
